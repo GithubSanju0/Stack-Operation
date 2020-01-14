@@ -3,7 +3,7 @@
 int arr[10], top=-1;
 
 int main(void){
-  int item, ch;
+  int item, ch, peekEle;
   
   while(1){
     cout << "--------------------\n";
@@ -27,7 +27,9 @@ int main(void){
     case 2: cout << pop() << "removed successfully.\n";
             break;
             
-    case 3: cout << "Peek element is " << peek() << "\n";
+    case 3: peekEle = peek();
+            if(peekEle != -1)
+              cout << "Peek element is " << peekEle << "\n";
             break;
             
     case 4: cout << "Number of elements are " top-1 "\n";
