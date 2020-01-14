@@ -1,6 +1,8 @@
 int pop(void){
-  if(top == -1)
+  if(top == -1){
     cout << "Stack Underflow\n";
+    return -1;
+  }
   else
-    cout << arr[top--] "removed successfully\n";
+    return arr[top--];
 }
