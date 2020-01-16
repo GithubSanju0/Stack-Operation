@@ -32,7 +32,7 @@ int main(void){
     case 3: peek();
             break;
             
-    case 4: cout << "Number of elements are " top-1 "\n";
+    case 4: cout << "Number of elements are " << count();
             break;
             
     case 5: return 0;
